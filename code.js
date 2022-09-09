@@ -19,7 +19,6 @@ class TicTacToeGame {
 				alert("Player " + this.currentPlayer + " is the winner")
 				this.start();
 			}
-			
 		}
 	}
 
@@ -56,7 +55,7 @@ class TicTacToeGame {
 		let gameBoard = document.createElement('div');
 		gameBoard.id = 'gameBoard';
 		gameBoard.classList.add('board');
-		gameBoard.addEventListener('click', this.handleSquareClick.bind(this))
+		gameBoard.addEventListener('click', this.handleSquareClick.bind(this));
 
 		this.board.forEach((square, index) => {
 			let squareElement = document.createElement('div');
